@@ -7,16 +7,6 @@
             text-align: center;
         } 
         
-        /*if you want backgroung of your choise
-        .bg{
-            background-image: url('.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            width: 100%;
-            height: 300%;
-        }
-        */
-        
         #ip1 {
             border-radius: 18px;
             background: white;
@@ -24,15 +14,44 @@
             width: 350px;
             height: 2px; 
         }
+
+        .btn {
+              
+              height: 30px;
+              width: 150px; 
+              border-radius: 18px;
+              border: 2px solid black;
+              text-align: center;
+        }        
+        #a:hover{
+            background-color: #698bc2;
+            color: black;     
+        }
+
+        #b:hover{
+            background-color: #698bc2;
+            color: black;     
+        }
+
+        a:link, a:visited {
+           background-color: #b57267;
+           color: white;
+           padding: 4px 10px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           border-radius: 18px;
+}
+
     </style>   
 
 </head>
-<body bgcolor="#3b3231">
+<body background="img.jpg">
     
     
-    <div style="text-align: right;">
-        <p></button><a href="g_html" >Google Image Search</a></p>
-        <p><a href="advance_search.html">Advance Search</a></p>
+    <div style="text-align: right;" >
+        <p style=><h2><a href="g_html" >Google Image Search</a></h2></p>
+        <p><h2><a href="advance_search.html">Advance Search</a></h2></p>
     </div>
     
     <div style="text-align: center;">
@@ -42,8 +61,8 @@
     <div class="border">
     <form  action="https://www.google.com/search">
         <input size="40px" type="text" id="ip1" name="q" >
-        <p><input type="submit" value="google search">
-        <input type="submit" value="I'm feeling lucky"> 
+        <p><input id="a" class="btn" type="submit" value="google search">
+        <input id="b" class="btn" name="btnI" type="submit" value="I'm feeling lucky">
         </p>
         
     </form>
